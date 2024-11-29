@@ -23,15 +23,17 @@ print(b)
 np.shape(A)
 np.shape(b)
 
-#Solução do sistema.
+#Solução do sistema. Aqui usaremos uma função de NUMPY "np.linalg.solve(A, b)" que
+#resolve uma equação de matriz linear, ou sistema de equações escalares lineares.
+
 x = np.linalg.solve(A, b)
-print(f"Solution: {x}")
+print(f"Solução: {x}")
 
 
 #Determinante
 d = np.linalg.det(A)
 
-print(f"Determinant of matrix A: {d:.2f}")
+print(f"Determinante da matriz: {d:.2f}")
 
 #Exemplo de um sistema que possui várias soluções, ou seja, D=0, singular.
 A_2= np.array([
